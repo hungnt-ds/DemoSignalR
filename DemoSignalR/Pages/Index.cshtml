@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+ 
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2">User</div>
+        <div class="col-4"><input type="text" id="userInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Fish Name</div>
+        <div class="col-4"><input type="text" id="fishNameInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Body Shape</div>
+        <div class="col-4"><input type="text" id="bodyShapeInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Age</div>
+        <div class="col-4"><input type="number" id="ageInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Size</div>
+        <div class="col-4"><input type="number" step="0.01" id="sizeInput" /></div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">
+            <input type="button" class="btn btn-primary" id="sendButton" value="Gửi" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <table id="commonTable" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Fish Name</th>
+                    <th>Body Shape</th>
+                    <th>Age</th>
+                    <th>Size</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+
+<script src="~/js/site.js"></script>
+<script src="~/microsoft/signalr/dist/browser/signalr.js"></script>
+
